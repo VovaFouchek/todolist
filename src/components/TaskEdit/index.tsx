@@ -1,4 +1,4 @@
-import { ITask } from "../../types";
+import { ITask } from "@/types";
 import { TaskEditForm } from "../TaskEditForm";
 
 import "./editTask.scss";

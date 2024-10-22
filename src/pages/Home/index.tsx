@@ -1,7 +1,7 @@
-import { SideBar } from "../../components/Sidebar";
-import { TaskEdit } from "../../components/TaskEdit";
-import { ITask } from "../../types";
-import { useTaskManager } from "../../hooks/useTaskManager";
+import { SideBar } from "@/components/Sidebar";
+import { TaskEdit } from "@/components/TaskEdit";
+import { useTaskManager } from "@/hooks/useTaskManager";
+import { ITask } from "@/types";
 
 const userName = "Jhon";
 const PRO_PLAN_PRICE = 1;

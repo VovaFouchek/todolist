@@ -1,7 +1,7 @@
 import { Fab } from "@mui/material";
 import AddIcon from "@mui/icons-material/Add";
 
-import { ITask } from "../../types";
+import { ITask } from "@/types";
 import { TaskList } from "../TaskList";
 import Avatar from "../Avatar";
 

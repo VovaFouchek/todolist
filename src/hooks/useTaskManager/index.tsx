@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { nanoid } from "nanoid";
 
-import { ITask } from "../../types";
+import { ITask } from "@/types";
 
 export const useTaskManager = (initialTasks: ITask[]) => {
   const [tasks, setTasks] = useState<ITask[]>(initialTasks);

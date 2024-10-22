@@ -1,5 +1,6 @@
 import { ITask } from "../../types";
 import { TaskItem } from "../TaskItem";
+
 import "./taskList.scss";
 
 interface TaskListProps {

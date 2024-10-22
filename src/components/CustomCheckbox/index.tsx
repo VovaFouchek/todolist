@@ -7,6 +7,18 @@ interface CheckboxProps {
   onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
+const CheckCircleIconStyled = {
+  color: "#49C25D",
+  width: "32px",
+  height: "32px",
+};
+
+const RadioButtonUncheckedIconStyled = {
+  color: "#071D55",
+  width: "32px",
+  height: "32px",
+};
+
 export const CustomCheckbox: React.FC<CheckboxProps> = ({
   checked,
   onChange,
@@ -15,20 +27,8 @@ export const CustomCheckbox: React.FC<CheckboxProps> = ({
     <Checkbox
       checked={checked}
       onChange={onChange}
-      icon={
-        <RadioButtonUncheckedIcon
-          sx={{ color: "#071D55", width: "32px", height: "32px" }}
-        />
-      }
-      checkedIcon={
-        <CheckCircleIcon
-          style={{
-            color: "#49C25D",
-            width: "32px",
-            height: "32px",
-          }}
-        />
-      }
+      icon={<RadioButtonUncheckedIcon sx={RadioButtonUncheckedIconStyled} />}
+      checkedIcon={<CheckCircleIcon style={CheckCircleIconStyled} />}
       sx={{ marginRight: "17px", padding: "0px" }}
     />
   );

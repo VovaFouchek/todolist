@@ -1,0 +1,70 @@
+.sidebar {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  max-width: 425px;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.avatar__inner {
+  display: flex;
+  gap: 20px;
+  padding: 20px 30px;
+  background-color: #3556ab;
+
+  h3 {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 8px;
+    text-shadow: 0px 2px 0px #000;
+  }
+
+  p {
+    max-width: 85%;
+    font-size: 25px;
+    font-weight: 200;
+    font-style: italic;
+    text-shadow: 0px 2px 0px #000;
+  }
+}
+
+.promo {
+  display: flex;
+  position: relative;
+  background-color: #cde53d;
+  border: 2px solid #9eb031;
+  color: #071d55;
+  padding: 25px;
+  text-align: center;
+  max-height: 116px;
+  height: 100%;
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+
+    h4 {
+      text-shadow: 0px 1px 0px #fff;
+    }
+  }
+
+  .price {
+    position: absolute;
+    top: -2px;
+    right: 25px;
+    padding: 25px;
+    background-color: #071d55;
+    display: grid;
+    place-items: center;
+
+    span {
+      font-size: 18px;
+      font-weight: medium;
+      color: #f2c94c;
+    }
+  }
+}

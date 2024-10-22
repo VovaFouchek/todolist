@@ -10,18 +10,19 @@ interface TaskEditProps {
   handleChangeTask: (task: ITask) => void;
 }
 
-export const TaskEdit: React.FC<TaskEditProps> = ({
+export const TaskEdit = ({
   task,
   handleSaveTask,
   handleDeleteTask,
   handleChangeTask,
-}) => {
+}: TaskEditProps) => {
   return (
     <>
       <div className="edit__task">
         <div className="edit__task-top">
           <h2>Edit Task</h2>
         </div>
+
         {task && (
           <TaskEditForm
             task={task}
